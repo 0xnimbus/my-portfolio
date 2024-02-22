@@ -1,0 +1,21 @@
+.icon-img {
+    background-color: blue;
+    margin: 0.5%;
+    height: 4%;
+    width: 4%;
+    cursor: pointer;
+}
+
+.icon-img:hover {
+    /* transform: rotate(360deg); Rotate image 360 degrees on hover */
+}
+
+.icon-div {
+    background-color: green;
+}
+
+#main-div {
+    background-color: red;
+    justify-content: center; 
+    text-align: center; 
+}
