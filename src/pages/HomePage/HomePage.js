@@ -1,7 +1,10 @@
 import './HomePage.css' 
-import React, {useState} from 'react';
-import styled from 'styled-components'
+// import React, {useState} from 'react'
+import React from 'react'
+// import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
+import AboutMe from './AboutMe'
 import GithubLogo from '../../assets/github-logo.png'
 import LinkedinLogo from '../../assets/linkedin-logo.png'
 import EmailLogo from '../../assets/email-logo.png'
@@ -67,7 +70,10 @@ function HomePage() {
             }}
             class='icon-img'  
           />
+
         </div>
+        <AboutMe/>
+        <h1> <Link to='nebula'> NEBULA LINK</Link></h1>
     </div>  
     
   );
