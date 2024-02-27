@@ -28,8 +28,11 @@ function Nebula() {
 
         // OrbitControls
         const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableZoom = false; // Disable zooming
-        controls.enablePan = false; // Disable panning (scrolling)
+        controls.enableDamping = true; // Optional: for smoother camera movements, if needed
+        controls.dampingFactor = 0.1;
+        controls.enableZoom = true; // You can disable this too if you don't want users to zoom
+        controls.enableRotate = false; // Prevents users from rotating the camera
+        controls.enablePan = false; // Prevents users from panning (moving) the camera
 
         // Particles
         const particleCount = 5000;
